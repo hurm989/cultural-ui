@@ -19,7 +19,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -39,4 +39,26 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+@font-face {
+  font-family: "Arabic";
+  src: url("/fonts/NotoSansArabic_Condensed-Medium") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Arabic";
+  src: url("/fonts/NotoSansArabic_Condensed-SemiBold") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Arabic";
+  src: url("/fonts/NotoSansArabic-Bold") format("ttf");
+  font-weight: 900;
+}
+/* In your CSS file (e.g., styles.css) */
+.phone-input-focused:focus {
+  border-color: green !important; /* Ensure the border turns green */
 }
