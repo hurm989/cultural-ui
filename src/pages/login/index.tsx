@@ -5,7 +5,7 @@ import {
     MainContainer,
 
     LoginHeading
-} from "./style";
+} from "../../styles/LoginStyle";
 import CustomButton from "@/components/button";
 import i18n from "@/lib/i18n";
 import HorizontalLinearStepper from "@/components/stepper";
@@ -13,7 +13,7 @@ import { Box } from "@mui/material";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import PhoneNumber from "@/components/numberField";
-export default function LoginScreen() {
+const LoginScreen=()=> {
     const { t } = useTranslation();
     console.log(i18n, "HEREEE")
     const router = useRouter()
@@ -94,3 +94,5 @@ export default function LoginScreen() {
 
     );
 }
+
+export default LoginScreen

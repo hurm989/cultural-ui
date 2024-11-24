@@ -5,7 +5,7 @@ import {
     MainContainer,
     LoginHeading,
     SelectCompanionHeding,
-} from "./style";
+} from "../../styles/registerDetailStyle";
 import CustomButton from "@/components/button";
 import i18n from "@/lib/i18n";
 import HorizontalLinearStepper from "@/components/stepper";

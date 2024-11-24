@@ -4,12 +4,12 @@ import { useTranslation } from "react-i18next";
 import {
     MainContainer, LoginHeading,
     SuccessHeading
-} from "./style";
+} from "../../styles/welcomeStyle";
 import i18n from "@/lib/i18n";
 import { useRouter } from "next/navigation";
 import { Box, Grid } from "@mui/material";
 import CustomButton from "@/components/button";
-export default function Welcome() {
+const Welcome = () => {
     const { t } = useTranslation();
     console.log(i18n, "HEREEE")
     const router = useRouter()
@@ -38,3 +38,5 @@ export default function Welcome() {
 
     );
 }
+
+export default Welcome

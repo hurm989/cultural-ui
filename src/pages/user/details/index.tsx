@@ -9,7 +9,7 @@ import {
     DetailsContent,
     DetailsHeading,
     DetailsPara
-} from "./style";
+} from "../../../styles/loginDetailstyle";
 import CustomButton from "@/components/button";
 import i18n from "@/lib/i18n";
 import HorizontalLinearStepper from "@/components/stepper";
@@ -27,7 +27,7 @@ interface Detail {
     gender: string;
     age: string;
 }
-export default function LoginScreen() {
+const LoginDetailsScreen = () => {
     const { t } = useTranslation();
     console.log(i18n, "HEREEE")
     const router = useRouter()
@@ -252,3 +252,4 @@ export const detailsArray: Detail[] = [
     },
 ];
 
+export default LoginDetailsScreen

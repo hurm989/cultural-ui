@@ -6,14 +6,14 @@ import {
     DetailsContent,
     DetailsHeading,
     DetailsPara,
-} from "./style";
+} from "../../styles/registerInfoStyle";
 import i18n from "@/lib/i18n";
 import HorizontalLinearStepper from "@/components/stepper";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Box, Grid } from "@mui/material";
 import CustomButton from "@/components/button";
-export default function LoginDetails() {
+const Info=()=> {
     const { t } = useTranslation();
     console.log(i18n, "HEREEE")
     const router = useRouter()
@@ -80,3 +80,5 @@ export default function LoginDetails() {
 
     );
 }
+
+export default Info

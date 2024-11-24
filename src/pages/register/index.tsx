@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import {
     MainContainer,
     LoginHeading
-} from "./style";
+} from "../../styles/registerStyle";
 import CustomButton from "@/components/button";
 import i18n from "@/lib/i18n";
 import HorizontalLinearStepper from "@/components/stepper";
@@ -14,7 +14,7 @@ import PhoneNumber from "@/components/numberField";
 import OutlinedInput from "@/components/input";
 import GenderToggle from "@/components/toggle";
 import CustomToggle from "@/components/toggle";
-export default function LoginScreen() {
+const RegisterScreen = () => {
     const { t } = useTranslation();
     console.log(i18n, "HEREEE")
     const router = useRouter()
@@ -86,7 +86,7 @@ export default function LoginScreen() {
                 <form>
                     <Box sx={{ mb: 2 }}>
                         <Box sx={{ mb: 1, fontSize: "1.3rem" }}>نوع الزّائر</Box>
-                        
+
                         {/* <OutlinedInput
                             id="name"
                             // label="أدخل رقم الجوال"
@@ -97,15 +97,15 @@ export default function LoginScreen() {
                             required
                             type="text"
                         /> */}
-                         <CustomToggle
-        options={[
-          { value: "citizen", label: "مواطـــــن" },
-          { value: "resident", label: "مقيـــــم" },
-          { value: "tourist", label: "سائـــــح" },
-        ]}
-        selectedValue={selectedValue1}
-        onChange={setSelectedValue1}
-      />
+                        <CustomToggle
+                            options={[
+                                { value: "citizen", label: "مواطـــــن" },
+                                { value: "resident", label: "مقيـــــم" },
+                                { value: "tourist", label: "سائـــــح" },
+                            ]}
+                            selectedValue={selectedValue1}
+                            onChange={setSelectedValue1}
+                        />
                     </Box>
                     <Box sx={{ mb: 2 }}>
                         <Box sx={{ mb: 1, fontSize: "1.3rem" }}>الاسم الكامل</Box>
@@ -136,10 +136,10 @@ export default function LoginScreen() {
                     <Box sx={{ mb: 2 }}>
                         <Box sx={{ mb: 1, fontSize: "1.3rem" }}>رقم الجوال</Box>
                         <PhoneNumber
-                            // onChange={(e) => setModel((prev) => ({ ...prev, phone: e }))}
-                            // onChange={(e) => handleChange(e)}
-                            // value={user?.phone_no}
-                            // defaultErrorMessage={error}
+                        // onChange={(e) => setModel((prev) => ({ ...prev, phone: e }))}
+                        // onChange={(e) => handleChange(e)}
+                        // value={user?.phone_no}
+                        // defaultErrorMessage={error}
                         />
                         {/* <OutlinedInput
                             id="name"
@@ -195,3 +195,5 @@ export default function LoginScreen() {
 
     );
 }
+
+export default RegisterScreen
