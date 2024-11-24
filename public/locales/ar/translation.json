@@ -17,5 +17,10 @@
   "cancel": "إلغـــــاء",
   "loginSuccessful": "تمّ تسجيل الدّخول بنجـــــاح!",
   "YouhavesuccessfullyloggedinWelcometotheHouseofCulture": "تمّ تسجيل دخولك بنجاح! أهلاً وسهلاً بكـ في بيت الثّقافة.",
-  "returnToHome": "العودة إلى الصّفحة الرّئيسية"
+  "returnToHome": "العودة إلى الصّفحة الرّئيسية",
+  "RegistrationCompletedSuccessfuly":"تمّ إكمال التّسجيل بنجـــــاح!",
+  "YourRegistrationCompletted":"تمّ إكمال تسجيلك بنجاح!",
+  "welcometothehouse":"أهلاً وسهلاً بكـ في بيت الثّقافة",
+  "newRegistration":"تسجيـــــل جديـــــد",
+  "registerCompanion":"تسجيـــــل المُرافقِيـــــن"
 }

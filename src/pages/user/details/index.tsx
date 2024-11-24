@@ -172,9 +172,9 @@ export default function LoginScreen() {
                     ))}
                 </Grid>
                 <Box sx={{ mt: "3rem" }}>
-                    <CustomButton onClick={() => router.push("/welcome")}
+                    <CustomButton onClick={() => router.push("/user/welcome")}
                         backgroundColor="#272B3A"
-                        sx={{ fontSize: "2rem", padding: "0.4rem 2.5rem" }} label={`${t('continuetologin')}`} fullWidth={true}
+                        sx={{ fontSize: "1.5rem", padding: "0.4rem 2.5rem" }} label={`${t('continuetologin')}`} fullWidth={true}
                     />
                 </Box>
 

@@ -42,7 +42,7 @@ export default function LoginScreen() {
             setError("الرجاء إدخال رقم الجوال")
         } else {
 
-            router.push("/details")
+            router.push("/user/info")
             handleNext()
         }
     }
@@ -68,7 +68,7 @@ export default function LoginScreen() {
             <LoginHeading sx={{ margin: "3rem 0 !important" }}>{t("loggedin")}</LoginHeading>
 
             <Box sx={{ width: "350px" }}>
-
+            <Box sx={{ mb: 1, fontSize: "1.3rem" }}>رقم الجوال :</Box>
                 <PhoneNumber
                     // onChange={(e) => setModel((prev) => ({ ...prev, phone: e }))}
                     onChange={(e) => handleChange(e)}
@@ -81,7 +81,7 @@ export default function LoginScreen() {
                     onClick={
                         handleLogin
                     }
-                    sx={{ fontSize: "1.8rem", padding: "0.6rem 3rem" }} label={`${t('login')}`} fullWidth={true}
+                    sx={{ fontSize: "1.5rem", padding: "0.6rem 3rem" }} label={`${t('login')}`} fullWidth={true}
                     startIcon={<LoginOutlined sx={{
                         minWidth: "2rem",
                         minHeight: "2rem",

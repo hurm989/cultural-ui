@@ -4,8 +4,8 @@ import TextField from '@mui/material/TextField';
 interface OutlinedInputProps {
     id: string;
     label?: string;
-    value: string;
-    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    value?: string;
+    onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
     type?: string; // Optional: Default is 'text'
     placeholder?: string; // Optional: Default is ''
     fullWidth?: boolean; // Optional: Default is false
@@ -41,10 +41,16 @@ const OutlinedInput: React.FC<OutlinedInputProps> = ({
             helperText={helperText}
             sx={{
                 "& .MuiInputBase-root": {
-                    borderRadius: "8px",
+                    borderRadius: "6px",
                     backgroundColor: "white",
-                    borderColor: "#272B3A"
+                    borderColor: "#272B3A",
+                    padding: "0"
+                },
+                "& .MuiInputBase-input": {
+                    padding: "0.5rem 1rem !important",
+                    borderColor:"black"
                 }
+               
             }}
         />
     );

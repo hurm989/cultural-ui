@@ -105,7 +105,7 @@ export default function Home() {
           {/* <ImageContainer> */}
           <Heading>{t("welcometoculturalhouse")}</Heading>
           <Box>
-            <CustomButton onClick={() => router.push("/login")} sx={{ fontSize: "1.8rem", padding: "0.6rem 3rem" }} label={`${t('login')}`} fullWidth={true}
+            <CustomButton onClick={() => router.push("/login")} sx={{ fontSize: "1.5rem", padding: "0.6rem 3rem" }} label={`${t('login')}`} fullWidth={true}
               startIcon={<LoginOutlined sx={{
                 minWidth: "2rem",
                 minHeight: "2rem",
@@ -115,7 +115,7 @@ export default function Home() {
           </Box>
           <SubHeading>{t("or")}</SubHeading>
           <Box>
-            <CustomButton sx={{ fontSize: "1.8rem", padding: "0.6rem 3rem" }} label={`${t('register')}`} fullWidth={true}
+            <CustomButton onClick={() => router.push("/register")}  sx={{ fontSize: "1.5rem", padding: "0.6rem 3rem" }} label={`${t('register')}`} fullWidth={true}
               startIcon={<PersonAddOutlined sx={{
                 minWidth: "2rem",
                 minHeight: "2rem",

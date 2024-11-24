@@ -7,13 +7,14 @@ const MainContainer = styled("div")({
   alignItems: "center",
   // height: "100vh",
   padding: "2rem",
+  // backgroundColor: "blueviolet",
 });
 const LoginHeading = styled("div")({
   fontSize: "2rem",
   // margin: "4rem 0 !important",
   fontWeight: 500,
   textAlign: "center",
-  width: "400px",
+  // width: "400px",
 });
 const SubHeading = styled("div")({
   fontSize: "2rem",
@@ -22,34 +23,19 @@ const SubHeading = styled("div")({
 });
 
 const ImageContainer = styled("div")({
-  //   display: "flex",
-  //   justifyContent: "center",
-  //   flexDirection: "column",
-  //   alignItems: "center",
-  //   maxWidth: "1100px",
-  //   backgroundColor: "red",
+  display: "flex",
+  justifyContent: "center",
+  flexDirection: "column",
+  alignItems: "center",
+  backgroundColor: "red",
+  minWidth: "600px",
+  // padding: "2rem",
 });
-const SelectCompanionHeding = styled("p")({
-  fontSize: "2.5rem",
-  //   display: "flex",
-  //   justifyContent: "center",
-  //   flexDirection: "column",
-  //   alignItems: "center",
-});
-const SelectorAddCompanionHeding = styled("p")({
-  fontSize: "1.4rem",
-  fontWeight: 300,
-  //   display: "flex",
-  //   justifyContent: "center",
-  //   flexDirection: "column",
-  //   alignItems: "center",
-});
+
 const DetailsContent = styled("div")({
   display: "flex",
   alignItems: "center",
-  justifyContent: "center",
-  //   textAlign: "center",
-  //   margin: "1rem 0",
+  margin: "1rem 0",
 });
 const DetailsHeading = styled("p")({
   // display: "flex",
@@ -57,27 +43,22 @@ const DetailsHeading = styled("p")({
   // flexDirection: "column",
   // alignItems: "center",
   fontSize: "1.6rem",
-  margin: "0 !important",
 });
 const DetailsPara = styled("p")({
-  fontSize: "1.3rem",
-  fontWeight: 300,
-
-  //   margin: "0 !important",
-  margin: "0 0.5rem 0 0 !important",
+  margin: "0 1rem !important",
+  fontSize: "1.6rem",
   // display: "flex",
   // justifyContent: "center",
   // flexDirection: "column",
   // alignItems: "center",
 });
+
 export {
-  MainContainer,
   DetailsHeading,
   DetailsPara,
-  DetailsContent,
-  SelectorAddCompanionHeding,
+  MainContainer,
   LoginHeading,
   ImageContainer,
   SubHeading,
-  SelectCompanionHeding,
+  DetailsContent,
 };
